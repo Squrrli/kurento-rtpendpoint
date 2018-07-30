@@ -12,7 +12,7 @@ window.onload = function() {
     remoteVideo4 = document.getElementById('remoteVideo4');	
 }
 
-var ws = new WebSocket('ws://192.168.6.6:8080');
+var ws = new WebSocket('ws://130.161.177.154:8080');
 
 window.onbeforeunload = function() {
     ws.close();

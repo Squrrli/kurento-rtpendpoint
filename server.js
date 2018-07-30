@@ -4,7 +4,7 @@ var ws = require('ws');
 var KurentoClient = require('./Kurento/KurentoClient');
 var fs = require('fs');
 
-const KURENTO_WS_URL = 'ws://192.168.6.20:8888/kurento';
+const KURENTO_WS_URL = 'ws://130.161.177.154:8888/kurento';
 
 //
 // Express
@@ -32,7 +32,7 @@ app.listen(3000, function(){
 //
 // Web Socket
 // 
-var wss = ws.Server({
+var wss = new ws.Server({
      port: 8080,     
 });  
 
